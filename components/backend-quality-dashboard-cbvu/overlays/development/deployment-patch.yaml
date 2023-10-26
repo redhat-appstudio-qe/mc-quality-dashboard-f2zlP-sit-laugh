@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-cbvu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-lyoh-tenant/mc-quality-dashboard/backend-quality-dashboard-cbvu@sha256:68179259016b3285530edfd97ced2355a0cb8ce296b1c09a9560f062a9126150
+        name: quality-backend-dashboard
+        resources: {}
+status: {}
